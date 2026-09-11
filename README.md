@@ -1,366 +1,488 @@
-# UK Website Compliance Skill — README
+Website Compliance Skill — README
 
-## Wichtiger Hinweis
+Important Notice
 
-Diese `SKILL.md` ist **ausschließlich als technische und organisatorische Hilfestellung** für die Entwicklung von Websites gedacht.
+This SKILL.md is provided solely as technical and organisational guidance for website development.
 
-Sie stellt **keine Rechtsberatung**, **keine Steuerberatung**, **keine Datenschutzberatung** und **keine Garantie für rechtliche Compliance** dar.
+It is not legal advice, not tax advice, not professional data-protection advice, and does not guarantee legal compliance.
 
-Die Inhalte sollen Claude bzw. anderen AI-Coding-Tools dabei helfen, bei der Entwicklung einer Firmenwebsite relevante UK-Rechtsbereiche zu erkennen, typische technische Prüfungen durchzuführen und mögliche Problembereiche frühzeitig sichtbar zu machen.
+The purpose of the skill is to help Claude and other AI coding tools identify relevant UK legal areas, implement common technical safeguards, and highlight potential compliance issues early during development.
 
-Trotz sorgfältiger Erstellung kann diese Datei **nicht gewährleisten**, dass eine konkrete Website zu jedem Zeitpunkt alle gesetzlichen, behördlichen, vertraglichen oder branchenspezifischen Anforderungen erfüllt.
+Despite careful preparation, this file cannot guarantee that a particular website will, at any given time, satisfy every applicable legal, regulatory, contractual, industry-specific, technical, or accessibility requirement.
 
----
+What This File Does NOT Do
 
-# Was diese Datei NICHT macht
+The SKILL.md:
 
-Die `SKILL.md`:
+does not replace a solicitor or qualified legal adviser;
 
-- ersetzt keinen Rechtsanwalt oder qualifizierten Rechtsberater;
-- ersetzt keine individuelle Datenschutzprüfung;
-- ersetzt kein professionelles Accessibility Audit;
-- ersetzt keine Sicherheitsprüfung durch einen qualifizierten Security-Spezialisten;
-- ersetzt keine steuerliche Beratung;
-- ersetzt keine Prüfung durch zuständige Behörden oder Regulierungsstellen;
-- garantiert keine vollständige rechtliche Konformität;
-- kann keine zukünftigen Gesetzesänderungen vorhersagen;
-- kann nicht garantieren, dass jede denkbare Besonderheit eines Unternehmens erfasst wird;
-- kann nicht garantieren, dass sämtliche Drittanbieter, Plugins, APIs oder Dienste korrekt arbeiten;
-- kann nicht garantieren, dass automatisch erzeugte Rechtstexte für einen konkreten Einzelfall ausreichend sind.
+does not replace an individual privacy or data-protection assessment;
 
----
+does not replace a professional accessibility audit;
 
-# Eigene Eingaben sind erforderlich
+does not replace a professional security assessment;
 
-Diese Skill-Datei funktioniert **nicht vollständig ohne projektspezifische Angaben**.
+does not replace tax advice;
 
-Das AI-System benötigt für eine sinnvolle Prüfung unter anderem korrekte Informationen über:
+does not replace advice from the relevant regulator or competent authority;
 
-- das Unternehmen;
-- die Rechtsform;
-- den Sitz;
-- das Registrierungsland;
-- die Unternehmensnummer;
-- die angebotenen Produkte oder Dienstleistungen;
-- B2B oder B2C;
-- die Zielgruppe;
-- die Länder, in denen Kunden angesprochen werden;
-- verwendete Drittanbieter;
-- Hosting;
-- Analytics;
-- Cookies;
-- Marketing;
-- Newsletter;
-- Kontaktformulare;
-- Zahlungsanbieter;
-- Kundenkonten;
-- Abonnements;
-- Buchungen;
-- Nutzer-Uploads;
-- KI-Systeme;
-- personenbezogene Daten;
-- besondere Datenkategorien;
-- Aufbewahrungsfristen;
-- branchenspezifische Anforderungen.
+does not guarantee complete legal compliance;
 
-**Fehlen diese Informationen, kann die Prüfung unvollständig oder falsch sein.**
+cannot predict future changes in law;
 
-Der Nutzer ist dafür verantwortlich, dem verwendeten AI-System **richtige, vollständige und aktuelle Angaben** zur Verfügung zu stellen.
+cannot guarantee that every possible business-specific requirement is covered;
 
----
+cannot guarantee that every third-party provider, plugin, API, dependency, or service behaves correctly;
 
-# Keine erfundenen Angaben verwenden
+cannot guarantee that generated legal wording is appropriate for a particular business or situation.
 
-Das AI-System darf niemals fehlende Unternehmensdaten einfach erfinden.
+Project-Specific Input Is Required
 
-Insbesondere dürfen keine erfundenen:
+This skill cannot operate fully without project-specific information.
 
-- Firmennamen;
-- Unternehmensnummern;
-- Adressen;
-- VAT-Nummern;
-- Registernummern;
-- E-Mail-Adressen;
-- Telefonnummern;
-- Genehmigungen;
-- Zertifizierungen;
-- Bewertungen;
-- Kunden;
-- Auszeichnungen;
-- rechtlichen Zuständigkeiten
+For a meaningful review, the AI system needs accurate information about, where applicable:
 
-als echte Informationen ausgegeben werden.
+the company;
 
-Fehlt eine Information, soll sie ausdrücklich als Platzhalter oder offene Frage gekennzeichnet werden.
+its legal entity type;
 
-Beispiel:
+place of registration;
 
-```text
+registered office / principal address;
+
+company number;
+
+VAT status;
+
+products and services;
+
+B2B/B2C model;
+
+target audience;
+
+countries in which customers are targeted;
+
+hosting;
+
+analytics;
+
+cookies and storage technologies;
+
+marketing;
+
+newsletters;
+
+contact forms;
+
+payment providers;
+
+customer accounts;
+
+subscriptions;
+
+bookings;
+
+user-generated content;
+
+AI systems;
+
+personal data;
+
+special-category data;
+
+retention periods;
+
+industry-specific requirements;
+
+third-party services.
+
+If these details are missing, the resulting review may be incomplete or incorrect.
+
+The user is responsible for providing the AI system with accurate, complete, and up-to-date project information.
+
+Never Invent Missing Information
+
+The AI system must never invent missing business information.
+
+In particular, it must not fabricate:
+
+company names;
+
+company numbers;
+
+addresses;
+
+VAT numbers;
+
+registration numbers;
+
+email addresses;
+
+telephone numbers;
+
+licences;
+
+certifications;
+
+reviews;
+
+customers;
+
+awards;
+
+regulatory permissions;
+
+legal identities
+
+and present them as real information.
+
+If information is missing, it should be clearly marked as a placeholder or open question.
+
+Example:
+
 [LEGAL_COMPANY_NAME]
 [REGISTERED_OFFICE]
 [COMPANY_NUMBER]
 [VAT_NUMBER]
 [CONTACT_EMAIL]
-```
 
----
+User Responsibility
 
-# Verantwortung des Nutzers
+The user remains responsible for:
 
-Der Nutzer trägt die Verantwortung für:
+the accuracy of the company and project information provided;
 
-1. die Richtigkeit der eingegebenen Unternehmens- und Projektdaten;
-2. die Auswahl und Nutzung der verwendeten Dienste;
-3. die Veröffentlichung und Verwendung der erzeugten Website;
-4. die Prüfung der bereitgestellten Ergebnisse;
-5. die Einhaltung aller für sein Unternehmen geltenden Gesetze;
-6. die Aktualisierung der Website bei Gesetzesänderungen;
-7. die Einholung professioneller Rechtsberatung, wenn diese erforderlich ist;
-8. die Kontrolle von Drittanbietern, Verträgen, Lizenzen und Datenschutzvereinbarungen.
+the selection and use of third-party services;
 
-Die Verwendung dieser Skill-Datei entbindet den Nutzer **nicht von seinen eigenen gesetzlichen Pflichten**.
+publishing and operating the website;
 
----
+reviewing generated output;
 
-# Keine Garantie auf Vollständigkeit
+complying with all laws applicable to the business;
 
-Recht ist abhängig von:
+keeping the website updated when laws or guidance change;
 
-- Jurisdiktion;
-- Zeitpunkt;
-- Branche;
-- Unternehmensstruktur;
-- Geschäftsmodell;
-- Zielgruppe;
-- angebotenen Produkten;
-- Datenverarbeitungen;
-- verwendeten Technologien;
-- Vertragsbeziehungen;
-- Drittanbietern;
-- konkreten Tatsachen.
+obtaining professional advice where necessary;
 
-Deshalb ist diese Skill-Datei bewusst als **Entscheidungs- und Prüfungsrahmen** konzipiert und nicht als abschließende Liste aller möglichen gesetzlichen Anforderungen.
+checking licences, contracts, processors, vendors, and privacy arrangements.
 
-Eine Website kann beispielsweise zusätzliche Anforderungen benötigen, wenn sie:
+Using this skill does not remove or transfer the user's legal responsibilities.
 
-- Finanzdienstleistungen;
-- Gesundheitsleistungen;
-- Lebensmittel;
-- Alkohol;
-- Glücksspiel;
-- Versicherungen;
-- medizinische Produkte;
-- beruflich regulierte Dienstleistungen;
-- Kinderangebote;
-- Marktplatzfunktionen;
-- Nutzer-Uploads;
-- Social Features;
-- Abonnements;
-- internationale Verkäufe
+No Guarantee of Completeness
 
-anbietet.
+Legal requirements depend on:
 
----
+jurisdiction;
 
-# Stand der Datei
+date;
 
-Diese Version wurde für den **Rechts- und Technikstand vom 11. September 2026** erstellt.
+industry;
 
-Insbesondere wurden die UK-Datenschutzänderungen durch den **Data (Use and Access) Act 2025 (DUAA)** sowie die 2026 veröffentlichte ICO-Guidance zu Storage and Access Technologies berücksichtigt.
+business structure;
 
-Das bedeutet jedoch **nicht**, dass die Datei dauerhaft aktuell bleibt.
+business model;
 
-Vor dem Einsatz bei einem echten Projekt sollte immer geprüft werden, ob seit dem Erstellungsdatum:
+target audience;
 
-- Gesetze geändert wurden;
-- neue Vorschriften in Kraft getreten sind;
-- Übergangsfristen abgelaufen sind;
-- neue ICO-/Regulator-Guidance veröffentlicht wurde;
-- Gerichtsentscheidungen die Rechtslage beeinflusst haben;
-- neue technische Anforderungen entstanden sind.
+products and services;
 
----
+data processing;
 
-# Keine Haftungsübernahme durch die Datei
+technologies;
 
-Durch die Bereitstellung dieser Datei übernimmt der Autor **keine Garantie dafür**, dass ein mit ihrer Hilfe erstelltes Projekt rechtlich, technisch, steuerlich oder regulatorisch fehlerfrei ist.
+contractual relationships;
 
-Insbesondere wird nicht zugesichert, dass Fehler ausschließlich durch diese Skill-Datei verursacht wurden oder überhaupt auf diese Skill-Datei zurückzuführen sind. Fehler können ebenso aus Claude, anderen AI-Systemen, Nutzerangaben, dem Projekt, Drittanbietern, technischen Änderungen oder der Rechtslage entstehen.
+third-party providers;
 
-Der Autor ist nicht verantwortlich für Schäden, Ansprüche, Abmahnungen, Bußgelder, Datenverluste, Sicherheitsvorfälle, Geschäftsverluste, Vertragsverletzungen oder sonstige Folgen, die aus:
+specific facts.
 
-- der Verwendung;
-- der fehlerhaften Verwendung;
-- der unvollständigen Verwendung;
-- der Fehlinterpretation;
-- der veralteten Verwendung;
-- den Eingaben des Nutzers;
-- den Ausgaben eines AI-Systems;
-- Änderungen der Rechtslage;
-- Fehlern in Drittanbieter-Diensten;
-- Fehlern im daraus erzeugten Code
+For that reason, this skill is intentionally designed as a decision and review framework, not as a definitive list of every legal requirement that might exist.
 
-entstehen.
+A website may require additional rules if it provides or sells, for example:
 
-**Dieser Abschnitt ist ein allgemeiner Haftungshinweis und keine Zusicherung, dass gesetzlich zulässige Haftung in jedem Land oder in jedem Einzelfall vollständig ausgeschlossen werden kann. Zwingende gesetzliche Haftungsregelungen bleiben unberührt.**
+financial services;
 
----
+healthcare services;
 
-# AI-generierter Code ist nicht automatisch sicher oder legal
+food;
 
-Code, Rechtstexte, Konfigurationen oder sonstige Ergebnisse, die unter Verwendung dieser Skill-Datei von Claude oder einem anderen AI-System erzeugt werden, müssen vor dem produktiven Einsatz geprüft werden.
+alcohol;
 
-## Fehler können verschiedene Ursachen haben
+gambling;
 
-Ein Fehler in einem von Claude erzeugten Projekt bedeutet **nicht automatisch, dass die `SKILL.md` fehlerhaft war**.
+insurance;
 
-Probleme können beispielsweise entstehen durch:
+medical products;
 
-- einen Fehler oder eine Halluzination von Claude;
-- eine falsche Interpretation der Aufgabe;
-- unvollständige oder falsche Eingaben des Nutzers;
-- fehlende Unternehmensinformationen;
-- fehlende Angaben zum Geschäftsmodell;
-- eine nicht erkannte rechtliche Besonderheit;
-- eine falsche Annahme über die verwendete Technologie;
-- einen Fehler im erzeugten Code;
-- einen Fehler in einer Abhängigkeit oder Open-Source-Bibliothek;
-- eine Änderung einer API;
-- eine Änderung eines Drittanbieter-Dienstes;
-- eine Änderung der Rechtslage;
-- neue oder geänderte behördliche Guidance;
-- eine Fehlkonfiguration des Servers oder Hostings;
-- eine spätere Änderung am Projekt durch den Nutzer oder andere Entwickler;
-- ein menschliches Bedienungs- oder Implementierungsproblem.
+regulated professional services;
 
-Die `SKILL.md` ist daher **nur ein Hilfsmittel innerhalb eines größeren Entwicklungsprozesses**. Sie kann weder die Fähigkeiten eines AI-Systems garantieren noch verhindern, dass das AI-System Fehler macht.
+services aimed at children;
 
-## Keine Garantie für Claude
+marketplace functionality;
 
-Die Verwendung dieser Skill-Datei stellt insbesondere **keine Garantie dafür dar, dass Claude**:
+user-generated content;
 
-- jede Anforderung korrekt erkennt;
-- jede Rechtsnorm richtig interpretiert;
-- immer die aktuellste Information verwendet;
-- jede Ausnahme erkennt;
-- jeden Drittanbieter korrekt bewertet;
-- korrekten und sicheren Code erzeugt;
-- alle Sicherheitslücken erkennt;
-- alle Datenschutzprobleme erkennt;
-- alle Accessibility-Probleme erkennt;
-- alle projektspezifischen Besonderheiten berücksichtigt.
+subscriptions;
 
-Auch wenn Claude die Skill-Datei vollständig befolgt, **kann Claude weiterhin Fehler machen**.
+international products or services.
 
-## Fehler der Skill und Fehler von Claude getrennt betrachten
+Date / Legal Baseline
 
-Bei einem Problem soll nicht automatisch davon ausgegangen werden, dass die Ursache die Skill-Datei war.
+This version is designed for the legal and technical position as of 11 September 2026.
 
-Die Ursache kann beispielsweise sein:
+In particular, it takes into account the UK data-protection changes introduced by the Data (Use and Access) Act 2025 (DUAA) and the 2026 ICO guidance on Storage and Access Technologies.
 
-```text
+This does not mean that the file will remain permanently current.
+
+Before using it on a real project, always check whether since the baseline date:
+
+legislation has changed;
+
+new regulations have entered into force;
+
+transitional arrangements have expired;
+
+new ICO or regulator guidance has been published;
+
+court decisions have affected the legal position;
+
+technical or security standards have changed;
+
+third-party providers have changed their practices.
+
+No Assumption of Liability
+
+By providing this file, the author does not guarantee that a project created with its help will be legally, technically, financially, tax-wise, or regulatorily correct.
+
+The author is not responsible for losses, claims, enforcement actions, fines, data loss, security incidents, business losses, contract breaches, or other consequences resulting from:
+
+use of the file;
+
+incorrect use;
+
+incomplete use;
+
+misunderstanding of its contents;
+
+outdated information;
+
+user inputs;
+
+AI-generated output;
+
+changes in the law;
+
+changes to third-party services;
+
+errors in generated code;
+
+configuration mistakes;
+
+hosting or infrastructure failures.
+
+In particular, there is no representation that an error was caused by this SKILL.md. Problems may instead result from Claude, another AI system, inaccurate or incomplete user input, the project itself, third-party providers, technical changes, implementation choices, or changes in the law.
+
+This is a general disclaimer and not a representation that all legally mandatory liability can be excluded in every jurisdiction or circumstance. Mandatory statutory rights and liabilities remain unaffected.
+
+AI Can Make Mistakes
+
+Code, legal text, configuration, recommendations, or other output generated by Claude or another AI system while using this skill must be reviewed before production use.
+
+Errors Can Have Multiple Causes
+
+A problem in an AI-generated project does not automatically mean that the SKILL.md was wrong.
+
+Possible causes include:
+
+a Claude error or hallucination;
+
+incorrect interpretation of the task;
+
+incomplete or incorrect user input;
+
+missing business information;
+
+a missing legal fact;
+
+an incorrectly recognised business model;
+
+an incorrect assumption about technology;
+
+a bug in generated code;
+
+a dependency or open-source package issue;
+
+an API change;
+
+a change by a third-party provider;
+
+a legal or regulatory change;
+
+new regulator guidance;
+
+server or hosting misconfiguration;
+
+later changes made by the user or another developer;
+
+human operational or implementation error.
+
+The SKILL.md is therefore only one part of a larger development and compliance process. It cannot guarantee the behaviour, reasoning, accuracy, or reliability of an AI system.
+
+No Guarantee for Claude
+
+Using this skill does not guarantee that Claude will:
+
+correctly identify every requirement;
+
+correctly interpret every legal rule;
+
+always use the latest information;
+
+recognise every exception;
+
+correctly assess every third-party service;
+
+generate correct or secure code;
+
+identify every security vulnerability;
+
+identify every privacy issue;
+
+identify every accessibility issue;
+
+account for every project-specific circumstance.
+
+Even when Claude follows this skill correctly, Claude can still make mistakes.
+
+Distinguish Skill Errors from AI Errors
+
+When something goes wrong, do not automatically conclude that the cause was the skill itself.
+
+For example:
+
 SKILL.md
    │
-   ├── enthält eine unvollständige Regel
-   │
-   ├── enthält eine veraltete Information
-   │
-   └── enthält einen Interpretationsspielraum
+   ├── incomplete rule
+   ├── outdated information
+   └── ambiguous instruction
    │
    ▼
-Claude
+Claude / AI
    │
-   ├── interpretiert die Regel falsch
-   ├── übersieht eine Anforderung
-   ├── erzeugt fehlerhaften Code
-   └── macht eine nicht erkannte Annahme
-   │
-   ▼
-Projekt
-   │
-   ├── Nutzer liefert falsche Daten
-   ├── Drittanbieter ändern ihr Verhalten
-   ├── Entwickler ändern den Code
-   └── Rechtslage ändert sich
+   ├── misinterprets a rule
+   ├── misses a requirement
+   ├── generates incorrect code
+   └── makes an incorrect assumption
    │
    ▼
-Endergebnis
-```
+Project
+   │
+   ├── user supplies incorrect data
+   ├── third-party services change
+   ├── developer changes implementation
+   └── legal requirements change
+   │
+   ▼
+Final Result
 
-Deshalb sollte bei Problemen die **gesamte Kette** untersucht werden und nicht nur die `SKILL.md`.
+The full chain should be investigated when a problem occurs, rather than assuming a single source was responsible.
 
-## Verantwortung des Nutzers bleibt bestehen
+User Review Remains Required
 
-Der Nutzer darf sich nicht darauf verlassen, dass:
+The user must not rely on the following assumption:
 
-> „Claude hat die Skill benutzt, deshalb muss alles stimmen.“
+"Claude used the skill, therefore everything must be correct."
 
-Das ist **nicht** der Zweck dieser Datei.
+That is not the purpose of this file.
 
-Der Nutzer muss die Ergebnisse vor dem produktiven Einsatz selbst prüfen und bei relevanten rechtlichen, steuerlichen, regulatorischen, sicherheitsrelevanten oder datenschutzrechtlichen Fragen geeignete Fachleute hinzuziehen.
+The user must review important results before production use and obtain appropriate professional advice for legal, tax, regulatory, security, privacy, accessibility, or other high-risk matters.
 
-Deshalb gilt:
+Therefore:
 
-> **AI output must be reviewed before production use.**
+AI output must be reviewed before production use.
 
----
+AI-Generated Legal Pages Are Not Automatically Valid
 
-# Nutzung auf eigenes Risiko
+Legal pages generated from this skill must be checked against the actual business and website.
 
-Die Verwendung dieser Skill-Datei erfolgt **auf eigene Verantwortung und eigenes Risiko**.
+In particular, do not publish generated:
 
-Durch den Download, die Installation, das Kopieren, die Verwendung oder die Weitergabe dieser Datei erklärt der Nutzer, dass er verstanden hat, dass:
+privacy notices;
 
-- es sich nur um eine Hilfestellung handelt;
-- keine Rechtsberatung erbracht wird;
-- keine vollständige Compliance garantiert wird;
-- eigene Eingaben und korrekte Projektdaten erforderlich sind;
-- der Nutzer die Ergebnisse selbst prüfen muss;
-- für kritische oder regulierte Projekte professionelle Beratung erforderlich sein kann.
+cookie notices;
 
-**Der Nutzer sollte diese Hinweise vor der produktiven Verwendung lesen und akzeptieren.**
+terms and conditions;
 
-Wichtig: Ein Download allein kann nach dem jeweils anwendbaren Recht nicht in jedem Fall eine rechtlich bindende Vertragsannahme oder einen wirksamen vollständigen Haftungsausschluss darstellen. Die obige Formulierung ist daher als **Nutzungshinweis und Risikoaufklärung** zu verstehen und nicht als Garantie für einen rechtlich durchsetzbaren Haftungsausschluss.
+cancellation policies;
 
----
+refund policies;
 
-# Empfohlener Einsatz
+accessibility statements;
 
-Für ein echtes Projekt sollte der Ablauf mindestens sein:
+marketing consent wording
 
-```text
+without verifying that they accurately describe the real processing and business practices.
+
+A legal notice that contradicts the actual code or operational process may create additional risk.
+
+Usage at Your Own Risk
+
+Use of this skill is at the user's own responsibility and risk.
+
+By downloading, installing, copying, using, or redistributing this file, the user acknowledges that:
+
+it is only a guidance tool;
+
+it is not legal advice;
+
+it does not guarantee complete compliance;
+
+accurate project-specific input is required;
+
+AI output must be reviewed;
+
+the user remains responsible for the final website;
+
+professional advice may be required for important or regulated projects.
+
+The user should read and understand these limitations before using the file in production.
+
+Important: a download by itself may not automatically create a legally binding agreement or enforceable blanket liability waiver under every applicable law. The wording above should therefore be understood as a use notice, risk disclosure, and limitation statement, not as a guarantee that all liability can legally be excluded.
+
+Recommended Workflow
+
+For a real project, use at least the following process:
+
 SKILL.md
    ↓
-Projektinformationen eingeben
+Provide project information
    ↓
-Website analysieren
+Analyse the website
    ↓
-Drittanbieter prüfen
+Identify third-party services
    ↓
-Rechtliche Anforderungen identifizieren
+Identify legal requirements
    ↓
-Technische Maßnahmen implementieren
+Implement technical controls
    ↓
-Security-Test
+Run security tests
    ↓
-Accessibility-Test
+Run accessibility tests
    ↓
-Privacy-/Cookie-Test
+Run privacy / cookie tests
    ↓
-Legal Review
+Review legal pages
    ↓
-Deployment
+Professional legal review where appropriate
    ↓
-Regelmäßige Aktualisierung
-```
+Deploy
+   ↓
+Monitor and update
 
----
+Minimum Project Input
 
-# Minimaler Projekt-Input
+Before starting, provide at least:
 
-Vor dem Start sollte mindestens Folgendes angegeben werden:
-
-```text
 COMPANY_NAME=
 LEGAL_ENTITY=
 COUNTRY=
@@ -385,52 +507,38 @@ USES_AI=
 INDUSTRY=
 HOSTING_PROVIDER=
 THIRD_PARTY_SERVICES=
-```
 
-Diese Daten müssen **wahrheitsgemäß und möglichst vollständig** sein.
+All values should be truthful and as complete as reasonably possible.
 
----
+For Claude
 
-# Für Claude
+Claude should treat this file as a development and review guide.
 
-Claude soll diese Datei als **Prüf- und Entwicklungsanleitung** verwenden.
+Claude should never claim:
 
-Claude soll niemals behaupten:
-
-```text
 "This website is 100% legally compliant."
-```
 
-Stattdessen soll Claude beispielsweise schreiben:
+Instead, Claude should use statuses such as:
 
-```text
 Compliance status: READY FOR LEGAL REVIEW
-```
 
-oder:
+or:
 
-```text
 Compliance status: CONDITIONAL
-```
 
-oder:
+or:
 
-```text
 Compliance status: FAIL
-```
 
-Bei Unsicherheit:
+For uncertainty:
 
-```text
 NEEDS LEGAL REVIEW
-```
 
----
+Final Statement
 
-# Abschluss
+This file is intended to help developers and AI systems identify and systematically address legal and technical risks at an early stage.
 
-Diese Datei soll helfen, **rechtliche und technische Risiken frühzeitig zu erkennen und systematisch zu bearbeiten**.
+It is not a substitute for the website operator's legal responsibilities and does not guarantee that a website will comply with every applicable requirement in every situation.
 
-Sie ist kein Ersatz für die tatsächliche Verantwortung des Website-Betreibers und keine Garantie dafür, dass eine Website in jeder Situation allen geltenden Vorschriften entspricht.
+Use at your own responsibility. Provide accurate project-specific information. Review AI output. Obtain professional advice where appropriate.
 
-**Verwendung auf eigene Verantwortung. Eigene Projektangaben sind erforderlich. Rechtliche Prüfung vor dem produktiven Einsatz wird empfohlen.**
